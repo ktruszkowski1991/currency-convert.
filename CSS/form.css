@@ -1,0 +1,73 @@
+.form__fieldset {
+  border-radius: 7px;
+  margin: 30px auto ;
+  box-shadow: 5px -5px 5px 0px rgba(0, 60, 33, 0.82);
+  padding: 30px;
+  border-color: teal;
+  background-color: white;
+}
+
+.form__legend {
+  background-color: teal;
+  font-size: 20px;
+  color: white;
+  padding: 10px 60px;
+  border-radius: 7px;
+  text-align: center;
+  box-shadow: 5px -5px 5px 0px rgba(0, 60, 33, 0.82);
+}
+
+
+.form__paragraph {
+  margin: 30px auto;
+}
+
+.form__paragraph--button {
+  text-align: center;
+}
+
+.form__paragraphText {
+  width: 100%;
+  max-width: 200px;
+  display: inline-block;
+  margin-right: 15px;
+  background-color: teal;
+  padding: 10px;
+  border-radius: 7px;
+  color: white;
+  box-shadow: 5px -5px 5px 0px rgba(0, 60, 33, 0.82);
+}
+.form__paragraphField {
+  width: 100%;
+  max-width: 200px;
+  border-style: solid;
+  padding: 10px;
+  border-radius: 7px;
+  box-shadow: 5px -5px 5px 0px rgba(0, 60, 33, 0.82);
+  background-color: #80808020;
+}
+
+.form__paragraphField:invalid {
+  background-color: hsl(174, 72%, 86%);
+}
+
+.form__paragraphField:disabled {
+  background-color: hsl(174, 72%, 66%);
+  color: black;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.form__Button {
+  width: 25%;
+  background-color: teal;
+  padding: 10px;
+  color: white;
+  border-radius: 7px;
+  box-shadow: 5px -5px 5px 0px rgba(0, 60, 33, 0.82);
+}
+
+.form__Button:hover {
+  background-color: hsl(180, 100%, 40%);
+  border-color: hsl(180, 100%, 40%);
+}

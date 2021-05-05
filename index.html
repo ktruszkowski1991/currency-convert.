@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content=" initial-scale=1.0">
+    <title>Kalkulator Walut</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+        integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
+        crossorigin="anonymous" />
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Antonio:wght@100;200;300;400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <link href="CSS/style.css" rel="stylesheet">
+    <link href="CSS/form.css" rel="stylesheet">
+    <link href="CSS/container.css" rel="stylesheet">
+
+    <script defer src="JS/script.js"></script>
+
+</head>
+
+<body class="body">
+    <div class="container">
+        <form class=" form js-form">
+            <fieldset class="form__fieldset">
+
+                <legend class="form__legend">Kalkulator Walutowy</legend>
+
+                <p class="form__paragraph">
+                    <label>
+                        <span class="form__paragraphText"> Kwota w PLN*:</span>
+                        <input class="form__paragraphField js-CurrentValue" name="value" type="number" required
+                            min="0.01" step="any" placeholder="Wpisz kwotę">
+                    </label>
+                </p>
+
+                <p class="form__paragraph">
+                    <label>
+                        <span class="form__paragraphText"> Zamień na:</span>
+                        <select class="form__paragraphField js-Currency" name="currency">
+                            <option class="rate" value="wybierz walutę">wybierz</option>
+                            <option class="rateEUR" value="EUR">EUR</option>
+                            <option class="rateUSD" value="USD">USD</option>
+                            <option class="rateGBP" value="GBP">GBP</option>
+                        </select>
+                    </label>
+                </p>
+            </fieldset>
+
+            <fieldset class="form__fieldset">
+                <legend class="form__legend">Wynik</legend>
+                <div class="score">
+
+                    <p class="form__paragraph">
+                        <label>
+                            <span class="form__paragraphText"> Otrzymasz:</span>
+                            <input class="form__paragraphField js-finalScore" name="finalScore" disabled>
+                        </label>
+                    </p>
+                    <p class="form__paragraph--button">
+                        <button class="form__Button">Oblicz</button>
+                        <button class="form__Button" type="reset">Wyczyść</button>
+                    </p>
+
+                </div>
+
+            </fieldset>
+        </form>
+        <footer class="container--footer">© 2021 Created by Kamil Truszkowski</footer>
+    </div>
+
+</body>
+
+</html>

@@ -1,0 +1,19 @@
+html {
+    box-sizing: border-box;
+}
+
+*, ::after, ::before {
+    box-sizing: inherit;
+}
+
+.body {
+    font-family: 'Antonio', sans-serif;
+    max-width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background: url(https://img.redro.pl/tapety/polska-waluta-pln-400-22378258.jpg);
+    background-size:cover;
+    background-position:center;
+
+}
